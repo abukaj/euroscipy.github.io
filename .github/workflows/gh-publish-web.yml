@@ -40,5 +40,6 @@ jobs:
         chmod og-rwx ~/.ssh/id_rsa ~/.ssh/known_hosts
         wc -l ~/.ssh/id_rsa ~/.ssh/known_hosts
         ls -lh ~/.ssh
-        ssh -vv -i ~/.ssh/id_rsa gh_euroscipy@euroscipy.g-node.org ls
+        ssh-add ~/.ssh/id_rsa
+        make rsync_upload
 

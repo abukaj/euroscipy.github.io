@@ -40,5 +40,5 @@ jobs:
         chmod og-rwx ~/.ssh/id_rsa ~/.ssh/known_hosts
         wc -l ~/.ssh/id_rsa ~/.ssh/known_hosts
         ls -lh ~/.ssh
-        make rsync_upload
+        pipenv run make rsync_upload
 
